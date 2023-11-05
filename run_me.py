@@ -23,6 +23,7 @@ SWAPS = (
 def make_swaps(new_name: str, new_description: str) -> None:  # noqa: D103
     underscored_name = new_name.replace("-", "_")
 
+    Path("./py_template").rename(underscored_name)
     for swap in SWAPS:
         full_src = swap.src.read_text()
 

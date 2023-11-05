@@ -1,7 +1,7 @@
 line-length = 100
 extend-exclude = [".venv"]
 fix = false
-format = "grouped"
+output-format = "grouped"
 
 select = [
     "ANN",
